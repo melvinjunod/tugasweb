@@ -1,0 +1,107 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="w3.css">
+		<script>
+			function openLaman(namalaman) {
+				var i;
+				var x = document.getElementsByClassName("laman");
+				for (i = 0; i < x.length; i++) {
+					x[i].style.display = "none"; 
+				}
+				document.getElementById(namalaman).style.display = "block"; 
+			}
+		</script>
+		<style>
+			body {
+				background-color:bisque;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<img src="gambaratas.jpg" width="100%">
+		</div>
+		<div class="w3-bar w3-brown">
+			<button class="w3-bar-item w3-button" onclick="openLaman('NasiGoreng')">NASI GORENG</button>
+			<button class="w3-bar-item w3-button" onclick="openLaman('Seblak')">SEBLAK</button>
+			<button class="w3-bar-item w3-button" onclick="openLaman('Sosis')">SOSIS</button>
+				
+			<div class="w3-dropdown-hover">	
+				<button class="w3-button">LAINNYA</button>
+				<div class="w3-dropdown-content w3-bar-block w3-card-4">
+					<button class="w3-bar-item w3-button" onclick="openLaman('RekomendasiSendok')">Rekomendasi Sendok</button>
+					<button class="w3-bar-item w3-button" onclick="openLaman('CaraMenyiapkanMeja')">Cara Menyiapkan Meja</button>
+					<button class="w3-bar-item w3-button" onclick="openLaman('MengkilaukanPiring')">Mengkilaukan Piring</button>
+					<button class="w3-bar-item w3-button" onclick="openLaman('MenyedapkanSuasana')">Menyedapkan Suasana</button>
+					<button class="w3-bar-item w3-button" onclick="openLaman('MembersihkanSisaMakanan')">Membersihkan Sisa Makanan</button>
+				</div>
+			</div>
+
+			<button class="w3-bar-item w3-button" onclick="openLaman('Profil')">PROFIL</button>
+		</div>
+		<center>
+			<div id="NasiGoreng" class="w3-container laman w3-animate-top" style="display: none;">
+				<h2>Nasi Goreng</h2>
+				<img src="nasigoreng.jpg" width="50%">
+			</div>
+
+			<div id="Seblak" class="w3-container laman w3-animate-bottom" style="display: none;">
+				<h2>Seblak</h2>
+				<img src="seblak.jpg" width="50%">
+				<p>Rasanya enak</p>
+			</div>
+
+			<div id="Sosis" class="w3-container laman w3-animate-center" style="display: none;">
+				<h2>Sosis</h2>
+				<img src="sosis.jpg" width="50%">
+				<p>Cocok dengan seblak</p>
+			</div>
+
+			<div id="RekomendasiSendok" class="w3-container laman w3-animate-zoom" style="display: none;">
+				<h2>Yang ini mas</h2>
+				<img src="sendok.jpg" width="50%">
+			</div>
+
+			<div id="CaraMenyiapkanMeja" class="w3-container laman w3-animate-left" style="display: none;">
+				<h2>Gitu aja gampang</h2>
+				<img src="meja.jpg" width="50%">
+			</div>
+
+			<div id="MengkilaukanPiring" class="w3-container laman w3-animate-right" style="display: none;">
+				<h2>Pakai ini</h2>
+				<img src="piring.jpg" width="50%">
+			</div>
+			
+			<div id="MenyedapkanSuasana" class="w3-container laman w3-animate-top" style="display: none;">
+				<h2>Beli ini</h2>
+				<img src="lilin.jpg" width="50%">
+			</div>
+
+			<div id="MembersihkanSisaMakanan" class="w3-container laman w3-animate-bottom" style="display: none;">
+				<h2>Jangan, biarkan bau aja</h2>
+				<img src="jangan.jpg" width="50%">
+			</div>
+
+			<div id="Profil" class="w3-container laman w3-animate-fading" style="display: none;">
+
+				<div class="wrapper">
+					<div class="section-header">
+						<h2> Profil saya </h2>
+					</div>
+					<div class="profile">
+						<img src="gambarprofil.jpg">
+						<h2>Melvin Junod</h2>
+						<h3>NIM : 10122109</h3>
+						<h3>Kelas : IF-3</h3> 
+					</div>
+					
+				</div>
+			</div>
+		</center>
+
+		
+
+
+	</body>
+</html>
